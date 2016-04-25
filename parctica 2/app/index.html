@@ -1,0 +1,48 @@
+<html xmlns:src="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Neveras</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body ng-app="myApp">
+
+<div class="container" id="content" ng-controller="NeverasCtrl as NeverasCtrl">
+
+    <div class="row search">
+        <form class="form-horizontal " role="search" id="search-form">
+            <div class="form-group col-sm-10 ">
+                <input type="text"
+                       class="form-control"
+                       id="search-box"
+                       placeholder="Search"
+                       ng-model="search">
+            </div>
+            <button type="submit"
+                    class="btn ">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </form>
+    </div>
+    <div class="row message-container" ng-repeat="electro in NeverasCtrl.electroList | filter:search">
+        <div class="message">
+            <div class="message-images col-sm-5">
+                <img class="message-image" src="{{electro.imagen}}">
+
+            </div>
+            <div class="message-text col-sm-7">{{electro.descripcion}}</div>
+        </div>
+    </div>
+</div>
+
+<!--dependencias-->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+
+
+<!--Aplicacion-->
+<script src="app.js"></script>
+<script src="neveras/neveras.controller.js"></script>
+
+</body>
+</html>

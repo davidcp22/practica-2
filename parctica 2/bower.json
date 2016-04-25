@@ -1,0 +1,16 @@
+{
+  "name": "repo",
+  "homepage": "https://github.com/vicmancb/enfasis3",
+  "authors": [
+    "Victor Cataño <vicmancb@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "=1.12.1",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.5.3"
+  }
+}

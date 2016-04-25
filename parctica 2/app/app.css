@@ -1,0 +1,40 @@
+body {
+    background-color: #F3F3F3;
+}
+#content {
+    background-color: #FFF;
+    margin-top: 5%;
+}
+.message-container {
+    background-color: #FFF;
+    border-bottom: 1px solid rgba(151, 150, 149, 0.53);
+    height: 122px;
+    padding: 10px;
+}
+.search {
+    border-bottom: 1px solid rgba(151, 150, 149, 0.52);
+    padding: 10px;
+}
+.message-images {
+    width: 150px;
+}
+.message-text {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+}
+.message-image {
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+}
+.message-icon {
+    height: 54px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.btn {
+    background-color: #002857 !important;
+    color: #FFF;
+}
